@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="KGk-i7-Jjw" customClass="MassedgeTableViewCell" customModule="Sour_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Sd-dV-VTw">
+                        <rect key="frame" x="10" y="10" width="394" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="r7j-sX-rQl">
+                                <rect key="frame" x="0.0" y="20" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="HS1-18-NIR"/>
+                                    <constraint firstAttribute="height" constant="60" id="lTz-tt-6l5"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQx-jT-JQu">
+                                <rect key="frame" x="70" y="0.0" width="254" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatBackgroundRight" translatesAutoresizingMaskIntoConstraints="NO" id="g44-LH-DL8">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="80"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUY-Ih-HcV">
+                                        <rect key="frame" x="25" y="15" width="204" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="g44-LH-DL8" firstAttribute="top" secondItem="HQx-jT-JQu" secondAttribute="top" id="1cC-1N-cks"/>
+                                    <constraint firstItem="mUY-Ih-HcV" firstAttribute="leading" secondItem="HQx-jT-JQu" secondAttribute="leading" constant="25" id="8ZF-WJ-NQx"/>
+                                    <constraint firstItem="g44-LH-DL8" firstAttribute="leading" secondItem="HQx-jT-JQu" secondAttribute="leading" id="8ox-Oi-Zhm"/>
+                                    <constraint firstAttribute="trailing" secondItem="mUY-Ih-HcV" secondAttribute="trailing" constant="25" id="KxJ-xp-7ef"/>
+                                    <constraint firstAttribute="bottom" secondItem="mUY-Ih-HcV" secondAttribute="bottom" constant="30" id="OxD-hi-Cj0"/>
+                                    <constraint firstItem="mUY-Ih-HcV" firstAttribute="top" secondItem="HQx-jT-JQu" secondAttribute="top" constant="15" id="f9L-hq-ivP"/>
+                                    <constraint firstAttribute="trailing" secondItem="g44-LH-DL8" secondAttribute="trailing" id="gee-GQ-Zkh"/>
+                                    <constraint firstAttribute="bottom" secondItem="g44-LH-DL8" secondAttribute="bottom" id="i7s-fr-g59"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boy" translatesAutoresizingMaskIntoConstraints="NO" id="CF2-uQ-IaT">
+                                <rect key="frame" x="334" y="20" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CpB-tc-8uv"/>
+                                    <constraint firstAttribute="width" constant="60" id="hvA-0M-wH4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3Sd-dV-VTw" secondAttribute="trailing" constant="10" id="BTe-ql-Vvz"/>
+                    <constraint firstItem="3Sd-dV-VTw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fRx-ET-Xe5"/>
+                    <constraint firstAttribute="bottom" secondItem="3Sd-dV-VTw" secondAttribute="bottom" constant="10" id="gtv-M3-RFf"/>
+                    <constraint firstItem="3Sd-dV-VTw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nt9-uB-iI7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cahatBackgroundImage" destination="g44-LH-DL8" id="Rxa-Nr-G4B"/>
+                <outlet property="chatLabel" destination="mUY-Ih-HcV" id="L6k-yi-hHg"/>
+                <outlet property="currentUserAvatar" destination="CF2-uQ-IaT" id="1zP-7O-saY"/>
+                <outlet property="guestAvatarImage" destination="r7j-sX-rQl" id="wif-nk-pYO"/>
+            </connections>
+            <point key="canvasLocation" x="356.52173913043481" y="62.946428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="boy" width="200" height="200"/>
+        <image name="chatBackgroundRight" width="682" height="142"/>
+        <image name="girl" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
